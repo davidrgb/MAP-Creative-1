@@ -22,6 +22,50 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Menu'),
+        actions: [
+          PopupMenuButton(
+              onSelected: (int value) {},
+              itemBuilder: (BuildContext context) {
+                return <PopupMenuItem<int>>[
+                  PopupMenuItem(
+                    value: 1,
+                    child: Row(
+                      children: [
+                        Icon(Icons.ac_unit),
+                        Text('Item 1'),
+                      ],
+                    ),
+                  ),
+                  PopupMenuItem(
+                    value: 2,
+                    child: Row(
+                      children: [
+                        Icon(Icons.access_alarm),
+                        Text('Item 2'),
+                      ],
+                    ),
+                  ),
+                  PopupMenuItem(
+                    value: 3,
+                    child: Row(
+                      children: [
+                        Icon(Icons.access_time),
+                        Text('Item 3'),
+                      ],
+                    ),
+                  ),
+                  PopupMenuItem(
+                    value: 4,
+                    child: Row(
+                      children: [
+                        Icon(Icons.accessibility),
+                        Text('Item 4'),
+                      ],
+                    ),
+                  ),
+                ];
+              }),
+        ],
       ),
       body: Container(
         width: MediaQuery.of(context).size.width,
@@ -55,6 +99,29 @@ class HomeScreen extends StatelessWidget {
             ),
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 1,
+        onTap: (int index) {},
+        items: [
+          BottomNavigationBarItem(
+            label: '',
+            icon: Icon(
+              Icons.settings,
+            ),
+          ),
+          BottomNavigationBarItem(
+            label: '',
+            icon: Icon(Icons.home),
+          ),
+          BottomNavigationBarItem(
+            label: '',
+            icon: Icon(Icons.message),
+          ),
+        ],
+        backgroundColor: colors[0],
+        unselectedItemColor: Color.fromRGBO(255, 255, 255, 0.75),
+        selectedItemColor: Colors.white,
       ),
     );
   }
