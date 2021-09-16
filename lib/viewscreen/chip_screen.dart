@@ -33,6 +33,8 @@ class ChipScreen extends StatelessWidget {
                   ),
                   label: const Text('Orange'),
                   onPressed: () {},
+                  deleteIcon: Icon(Icons.remove),
+                  onDeleted: () {},
                 ),
                 InputChip(
                   avatar: CircleAvatar(
@@ -40,6 +42,8 @@ class ChipScreen extends StatelessWidget {
                   ),
                   label: const Text('Yellow'),
                   onPressed: () {},
+                  deleteIcon: Icon(Icons.remove),
+                  onDeleted: () {},
                 ),
                 InputChip(
                   avatar: CircleAvatar(
@@ -47,6 +51,8 @@ class ChipScreen extends StatelessWidget {
                   ),
                   label: const Text('Green'),
                   onPressed: () {},
+                  deleteIcon: Icon(Icons.remove),
+                  onDeleted: () {},
                 ),
                 InputChip(
                   avatar: CircleAvatar(
@@ -54,6 +60,8 @@ class ChipScreen extends StatelessWidget {
                   ),
                   label: const Text('Blue'),
                   onPressed: () {},
+                  deleteIcon: Icon(Icons.remove),
+                  onDeleted: () {},
                 ),
                 InputChip(
                   avatar: CircleAvatar(
@@ -61,6 +69,8 @@ class ChipScreen extends StatelessWidget {
                   ),
                   label: const Text('Indigo'),
                   onPressed: () {},
+                  deleteIcon: Icon(Icons.remove),
+                  onDeleted: () {},
                 ),
                 InputChip(
                   avatar: CircleAvatar(
@@ -68,6 +78,8 @@ class ChipScreen extends StatelessWidget {
                   ),
                   label: const Text('Purple'),
                   onPressed: () {},
+                  deleteIcon: Icon(Icons.remove),
+                  onDeleted: () {},
                 ),
                 InputChip(
                   avatar: CircleAvatar(
@@ -75,6 +87,8 @@ class ChipScreen extends StatelessWidget {
                   ),
                   label: const Text('Red'),
                   onPressed: () {},
+                  deleteIcon: Icon(Icons.remove),
+                  onDeleted: () {},
                 ),
               ],
             ),
