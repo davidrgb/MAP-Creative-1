@@ -1,5 +1,7 @@
 import 'package:creative1/viewscreen/chip_screen.dart';
+import 'package:creative1/viewscreen/grid_screen.dart';
 import 'package:creative1/viewscreen/home_screen.dart';
+import 'package:creative1/viewscreen/random_screen.dart';
 import 'package:creative1/viewscreen/toggle_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -28,6 +30,8 @@ class Creative1App extends StatelessWidget {
           HomeScreen.routeName: (BuildContext context) => HomeScreen(),
           ChipScreen.routeName: (context) => ChipScreen(),
           ToggleScreen.routeName: (context) => ToggleScreen(),
+          GridScreen.routeName: (context) => GridScreen(),
+          RandomScreen.routeName: (context) => RandomScreen(),
         });
   }
 }

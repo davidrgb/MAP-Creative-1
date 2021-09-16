@@ -1,4 +1,6 @@
 import 'package:creative1/viewscreen/chip_screen.dart';
+import 'package:creative1/viewscreen/grid_screen.dart';
+import 'package:creative1/viewscreen/random_screen.dart';
 import 'package:creative1/viewscreen/toggle_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +21,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'),
+        title: Text('Menu'),
       ),
       body: Container(
         width: MediaQuery.of(context).size.width,
@@ -38,6 +40,18 @@ class HomeScreen extends StatelessWidget {
                 Navigator.pushNamed(context, ToggleScreen.routeName);
               },
               child: Text('Toggle Demo'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, GridScreen.routeName);
+              },
+              child: Text('Grid Demo'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, RandomScreen.routeName);
+              },
+              child: Text('Random Demo'),
             ),
           ],
         ),
